@@ -1,0 +1,44 @@
+/* Empty. Add your own CSS if you like */
+.arkaplan{
+    background-color: rgb(242,242,242);
+}
+
+.ortala{
+    width: 250px;
+    height: 100px;
+    display: table;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin:0 auto;
+    margin-top: 80px;
+}
+
+.label{
+    
+    width: 250px;
+    height: 45px;
+    border: 0.5px solid grey;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 50px;
+   
+}
+.butondiv{
+    width: 250px;
+    height: 50px;
+    display: table;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin:0 auto;
+    margin-top: 50px;
+
+}
+
+.buton{
+    background-color: black;
+    width: 250px;
+    border: 0.5px solid black;
+    border-radius: 20px;
+}
