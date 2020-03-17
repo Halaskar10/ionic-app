@@ -1,50 +1,59 @@
 angular.module('starter.controllers', [])
 
-  .controller('LoginCtrl', function ($scope, $ionicModal, $timeout, $http) {
+  .controller('LoginCtrl', function ($state, $scope, $timeout, $http) {
 
-      // girilen login bilgileri tutulacak
-      $scope.loginData = {};
-      // $scope.loginState;
+    // girilen login bilgileri tutulacak
+    $scope.postData = {};
 
-      //gerekli değil
-      $ionicModal.fromTemplateUrl('templates/login.html', {
-        scope: $scope
-      }).then(function (modal) {
-        $scope.modal = modal;
-      });
+    //database ile giriş
+    $scope.login = function () {
+      console.log("Giriş yapılıyor.", $scope.postData);
 
 
-      //database ile giriş
-      $scope.login = function () {
-        console.log("Giriş yapılıyor.", $scope.loginData);
+      // $http.get('link' + $scope.loginData.email + +$scope.loginData.password).success(function (data) {
+      //   console.log(data[0].email + 'kullanıcısı giriş yaptı');
+      //   $scope.user = data[0];
+      //   $scope.loginState = true;
+      // })
+      alert("Login Succesful");
+      $state.go('tab.dash');
 
+      // $http.post('http://login_URL',postData).success(function(data){
+      //   alert("Login Succesful")
+      //   $state.go('tabs');        
+      // })
+      // .error(function(data){
+      //   alert("ERROR");
+      // });
 
-        $http.get('link' + $scope.loginData.username + +$scope.loginData.password).success(function (data) {
-          console.log(data[0].username + 'kullanıcısı giriş yaptı');
-          $scope.user = data[0];
-          $scope.loginState = true;
-        })
-
-      };
+    };
   })
 
-    .controller('DashCtrl', function ($scope) {})
 
-    .controller('ChatsCtrl', function ($scope, Chats) {
+  .controller('RegisterCtrl', function ($scope, $ionicModal, $timeout, $http) {
+
+    $scope.registerData = {};
+
+    // $http.post('link'+)  devam edilecek
+  })
+
+  .controller('DashCtrl', function ($scope) {})
+
+  .controller('ChatsCtrl', function ($scope, Chats) {
 
 
-      $scope.chats = Chats.all();
-      $scope.remove = function (chat) {
-        Chats.remove(chat);
-      };
-    })
+    $scope.chats = Chats.all();
+    $scope.remove = function (chat) {
+      Chats.remove(chat);
+    };
+  })
 
-    .controller('ChatDetailCtrl', function ($scope, $stateParams, Chats) {
-      $scope.chat = Chats.get($stateParams.chatId);
-    })
+  .controller('ChatDetailCtrl', function ($scope, $stateParams, Chats) {
+    $scope.chat = Chats.get($stateParams.chatId);
+  })
 
-    .controller('AccountCtrl', function ($scope) {
-      $scope.settings = {
-        enableFriends: true
-      };
-    });
+  .controller('AccountCtrl', function ($scope) {
+    $scope.settings = {
+      enableFriends: true
+    };
+  });
