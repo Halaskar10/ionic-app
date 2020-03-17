@@ -1,38 +1,40 @@
 <div>
 
-    <ion-view class="arkaplan">
+  <ion-view class="arkaplan">
     <div class="arkaplan">
       <ion-content class="padding">
         <div class="ortala">
           <p><img src="img/operics.png" style="margin: auto;" alt=""></p>
         </div>
-  
-        <div class="label">
-          <label class="item-input-wrapper">
-            <i class="icon ion-ios-person placeholder-icon"></i>
-            <input type="email" placeholder="isminiz@mailadresi.com" ngModel="postData.email" class="arkaplan">
-          </label>
-        </div>
-  
-        <div class="label">
-          <label class="item-input-wrapper">
-            <i class="icon ion-key placeholder-icon"></i>
-            <input type="password" placeholder="**********" ngModel="postData.password" class="arkaplan">
-          </label>
-        </div>
- 
-  
-        <div class="butondiv">
-          <button class="button buton" ng-click="login()">
-            <h4 style="color:white; text-align: center">Giriş Yap</h4>
-          </button>
-        </div>
-  
-  
-  
-    
+
+        <form name="loginForm" >
+          <div class="label">
+            <label class="item-input-wrapper">
+              <i class="icon ion-ios-person placeholder-icon"></i>
+              <input type="email" placeholder="isminiz@mailadresi.com" ngModel="postData.email" class="arkaplan">
+            </label>
+          </div>
+
+          <div class="label">
+            <label class="item-input-wrapper">
+              <i class="icon ion-key placeholder-icon"></i>
+              <input type="password" placeholder="**********" ngModel="postData.password" class="arkaplan">
+            </label>
+          </div>
+          <div class="butondiv">
+            <button class="button buton" type="submit" ng-click="login()">
+              <h4 style="color:white; text-align: center">Giriş Yap</h4>
+            </button>
+          </div>
+        </form>
+
+
+        
+
+
+
+
       </ion-content>
-    </ion-view>
+  </ion-view>
 </div>
-  </div>
-  
+</div>
