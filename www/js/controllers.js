@@ -9,29 +9,33 @@ angular.module('starter.controllers', [])
     $scope.login = function () {
       console.log("Giriş yapılıyor.", $scope.postData);
 
-
-      // $http.get('link' + $scope.loginData.email + +$scope.loginData.password).success(function (data) {
-      //   console.log(data[0].email + 'kullanıcısı giriş yaptı');
-      //   $scope.user = data[0];
-      //   $scope.loginState = true;
-      // })
+      //SEMBOLİK GİRİŞ//
       alert("Login Succesful");
       $state.go('tab.dash');
-
-      // $http.post('http://login_URL',postData).success(function(data){
+      // $http.post('http://login_URL',postData).success(function(data){ --------------------MYSQL BAĞLANTI KISMI-----------------
       //   alert("Login Succesful")
       //   $state.go('tabs');        
       // })
       // .error(function(data){
       //   alert("ERROR");
       // });
-
     };
+
+    $scope.kayitGit = function() { //Login sayfasını kayıt sayfasına yönlendirir.
+      $state.go('kayit')
+    }
+
+    $scope.kayitOl = function(){}
+
+
+
   })
 
-  .controller('SmsCtrl',function($scope){})
+  .controller('KayitCtrl',function($scope){})
 
-  .controller('SifreCtrl',function($scope){})
+  .controller('SmsCtrl', function ($scope) {})
+
+  .controller('SifreCtrl', function ($scope) {})
 
 
   .controller('RegisterCtrl', function ($scope, $ionicModal, $timeout, $http) {

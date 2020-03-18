@@ -2,8 +2,8 @@
   <ion-view class="arkaplan">
     <div>
       <ion-content class="padding">
-        <div class="ortala">
-          <p><img src="img/operics.png" style="margin: auto;" alt=""></p>
+        <div class="logo">
+          <p><img src="img/operics.png" alt=""></p>
         </div>
 
         <div class="labeldiv">
@@ -19,16 +19,17 @@
             <input type="password" placeholder="**********" ngModel="postData.password" class="arkaplan">
           </label>
         </div>
+        
 
 
-        <div class="butondiv" style="margin-top: 50px;">
+        <div class="butonDiv" style="margin-top: 50px;">
           <button class="button" ng-click="login()">
             <h4 style="color:white; text-align: center">Giriş Yap</h4>
           </button>
         </div>
 
-        <div class="butondiv" style="margin-top: 15px;">
-          <button class="button" style="background-color:rgb(242,242,242);">
+        <div class="butonDiv" style="margin-top: 15px;">
+          <button class="button" ng-click="kayitGit()" style="background-color:rgb(242,242,242);">
             <h4 style="color:black; text-align: center">Kayıt Ol</h4>
           </button>
         </div>
