@@ -29,6 +29,10 @@ angular.module('starter.controllers', [])
     };
   })
 
+  .controller('SmsCtrl',function($scope){})
+
+  .controller('SifreCtrl',function($scope){})
+
 
   .controller('RegisterCtrl', function ($scope, $ionicModal, $timeout, $http) {
 

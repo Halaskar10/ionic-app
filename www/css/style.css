@@ -38,11 +38,24 @@
 
 }
 
-.buton{
+.button{
     background-color: black;
     width: 250px;
     border: 0.5px solid black;
     border-radius: 20px;
 }
 
+#sifremiUnuttum{
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+#sifremiUnuttumYazi{
+    text-decoration: none;
+    /* list-style-type: none; */
+    color: black;
+}
 

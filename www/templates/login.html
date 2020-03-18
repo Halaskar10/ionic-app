@@ -1,47 +1,46 @@
 <div>
-
   <ion-view class="arkaplan">
-  <div class="arkaplan">
-    <ion-content class="padding">
-      <div class="ortala">
-        <p><img src="img/operics.png" style="margin: auto;" alt=""></p>
-      </div>
+    <div>
+      <ion-content class="padding">
+        <div class="ortala">
+          <p><img src="img/operics.png" style="margin: auto;" alt=""></p>
+        </div>
 
-      <div class="labeldiv">
-        <label class="item-input-wrapper label">
-          <i class="icon ion-ios-person placeholder-icon"></i>
-          <input type="email" placeholder="isminiz@mailadresi.com" ngModel="postData.email" class="arkaplan">
-        </label>
-      </div>
+        <div class="labeldiv">
+          <label class="item-input-wrapper label">
+            <i class="icon ion-ios-person placeholder-icon"></i>
+            <input type="email" placeholder="isminiz@mailadresi.com" ngModel="postData.email" class="arkaplan">
+          </label>
+        </div>
 
-      <div class="labeldiv">
-        <label class="item-input-wrapper label">
-          <i class="icon ion-key placeholder-icon"></i>
-          <input type="password" placeholder="**********" ngModel="postData.password" class="arkaplan">
-        </label>
-      </div>
-
-
-      <div class="butondiv" style="margin-top: 50px;">
-        <button class="button siyahbuton" ng-click="login()">
-          <h4 style="color:white; text-align: center">Giriş Yap</h4>
-        </button>
-      </div>
-
-      <div class="butondiv" style="margin-top: 15px;">
-        <button class="button beyazbuton" >
-          <h4 style="color:black; text-align: center">Kayıt Ol</h4>
-        </button>
-      </div>
-
-      <div class="sifre">
-        <p> <a href=>Şifremi Unuttum</a> </p>
-      </div>
+        <div class="labeldiv">
+          <label class="item-input-wrapper label">
+            <i class="icon ion-key placeholder-icon"></i>
+            <input type="password" placeholder="**********" ngModel="postData.password" class="arkaplan">
+          </label>
+        </div>
 
 
+        <div class="butondiv" style="margin-top: 50px;">
+          <button class="button" ng-click="login()">
+            <h4 style="color:white; text-align: center">Giriş Yap</h4>
+          </button>
+        </div>
 
-  
-    </ion-content>
+        <div class="butondiv" style="margin-top: 15px;">
+          <button class="button" style="background-color:rgb(242,242,242);">
+            <h4 style="color:black; text-align: center">Kayıt Ol</h4>
+          </button>
+        </div>
+
+        <div id="sifremiUnuttum">
+          <p> <a id="sifremiUnuttumYazi" href="">Şifremi Unuttum</a> </p>
+        </div>
+
+
+
+
+      </ion-content>
   </ion-view>
 </div>
 </div>

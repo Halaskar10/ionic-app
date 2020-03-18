@@ -42,6 +42,20 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       controller:'LoginCtrl'
     })
 
+    .state('sms',{
+      url:'/sms',
+      abstract:false,
+      templateUrl:'templates/sms.html',
+      controller:'SmsCtrl'
+    })
+
+    .state('sifremiUnuttum',{
+      url:'/sifremiunuttum',
+      abstract:false,
+      templateUrl:'templates/sifremiunuttum.hmtl',
+      controller:'SifreCtrl'
+    })
+
   // setup an abstract state for the tabs directive
     .state('tab', {
     url: '/tab',
